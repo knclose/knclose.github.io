@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div>
 <form class="box" id="form" action="index.html" method="post">
     <h1>Отчет Elsiga</h1>
     <input type="text" name="date" placeholder="Дата">
     <input type="text" name="fio" placeholder="ФИО">
     <input type="text" name="name" placeholder="Название точки">
+    <h1 align="center">Про деньги</h1>
     <input type="text" name="cash" placeholder="Наличка">
     <input type="text" name="nocash" placeholder="Безнал">
     <input type="text" name="qr" placeholder="QR">
@@ -22,7 +23,7 @@
     <input type="submit" name="" value="Отправить отчет">
 
 </form>
-
+</div>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
   <script>
@@ -36,7 +37,7 @@
 
            let message = `Отчет elciga\n`;
            message += `${ this.date.value } ${ this.fio.value }\n`;
-           message += `Название точки: ${ this.name.value }\n`; 
+           message += `Название точки: ${ this.name.value }\n`;
            message += `Наличка: ${ this.name.value }\n`;
            message += `Безнал: ${ this.cash.value }\n`;
            message += `QR: ${ this.qr.value }\n`;
