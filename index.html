@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>َAnimated Login Form</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-<h1>Отчет Elsiga</h1>
-<form class="box" action="index.html" method="post">
-  <br><br>
-  
-  <input type="text" name="" placeholder="Дата">
-  <input type="text" name="" placeholder="ФИО">
-  <input type="text" name="" placeholder="Название точки">
-  <input type="text" name="" placeholder="Наличка">
-  <input type="text" name="" placeholder="Безнал">
-  <input type="text" name="" placeholder="QR">
-  <input type="text" name="" placeholder="Выручка">
-  <input type="text" name="" placeholder="Инкассация">
-  <input type="text" name="" placeholder="Расходы">
-  <input type="text" name="" placeholder="ЗП">
-  <input type="submit" name="" value="Отправить отчет">
-  
+</head>
+<body>
+
+<form class="box" id="form" action="index.html" method="post">
+    <h1>Отчет Elsiga</h1>
+    <input type="text" name="date" placeholder="Дата">
+    <input type="text" name="fio" placeholder="ФИО">
+    <input type="text" name="name" placeholder="Название точки">
+    <input type="text" name="cash" placeholder="Наличка">
+    <input type="text" name="nocash" placeholder="Безнал">
+    <input type="text" name="qr" placeholder="QR">
+    <input type="text" name="ammount" placeholder="Выручка">
+    <input type="text" name="incas" placeholder="Инкассация">
+    <input type="text" name="expenses" placeholder="Расходы">
+    <input type="text" name="zp" placeholder="ЗП">
+    <input type="submit" name="" value="Отправить отчет">
+
 </form>
 
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-  </body>
+  <script>
+    const TOKEN = "2111210581:AAExiy5aLhbeDHeEXwMRc4bFdU4HA-d_mdc";
+    const CHAT_ID = "-1001443170121";
+    const = URI_API= `https://api.telegram.org/{ TOKEN }/sendMessage`;
+
+    document.getElementById('form').addEventListener('submit', function(e) {
+           e.preventDefault();
+
+
+           let message = `Отчет elciga\n`;
+           message += `${ this.date.value } ${ this.fio.value }\n`;
+           message += `Название точки: ${ this.name.value }\n`; 
+           message += `Наличка: ${ this.name.value }\n`;
+           message += `Безнал: ${ this.cash.value }\n`;
+           message += `QR: ${ this.qr.value }\n`;
+           message += `Выручка: ${ this.ammount.value }\n`;
+           message += `Инкассация: ${ this.incas.value }\n`;
+           message += `Расходы: ${ this.expenses.value }\n`;
+           message += `ЗП: ${ this.zp.value }\n`;
+           console.log(message);
+
+           axios.post(URI_API, {
+               chat_id: CHAT_ID,
+               parse_mode: 'html',
+               text: message
+           })
+    })
+  </script>
+
+</body>
 </html>
