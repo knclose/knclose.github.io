@@ -5,7 +5,7 @@ tg.expand();
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-tg.MainButton.text = "Send data"
+tg.MainButton.text = "Отправить отчет"
 tg.MainButton.isVisible = true
 tg.MainButton.isActive = true
 tg.MainButton.show()
