@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>َAnimated Login Form</title>
+    <title></title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div>
-<form class="box" id="form" action="index.html" method="post">
-    <h1>Отчет Elsiga</h1>
-    <input type="text" name="date" placeholder="Дата">
-    <input type="text" name="fio" placeholder="ФИО">
-    <input type="text" name="name" placeholder="Название точки">
-    <h1 align="center">Про деньги</h1>
-    <input type="text" name="cash" placeholder="Наличка">
-    <input type="text" name="nocash" placeholder="Безнал">
-    <input type="text" name="qr" placeholder="QR">
-    <input type="text" name="ammount" placeholder="Выручка">
-    <input type="text" name="incas" placeholder="Инкассация">
-    <input type="text" name="expenses" placeholder="Расходы">
-    <input type="text" name="zp" placeholder="ЗП">
-    <input type="submit" name="" value="Отправить отчет">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
 
-</form>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <form action="index.html" class="login-form">
+        <h1>Отчет Elciga</h1>
 
-  <script>
-    const TOKEN = "2111210581:AAExiy5aLhbeDHeEXwMRc4bFdU4HA-d_mdc";
-    const CHAT_ID = "-1001443170121";
-    const = URI_API= `https://api.telegram.org/{ TOKEN }/sendMessage`;
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="ФИО"></span>
+        </div>
 
-    document.getElementById('form').addEventListener('submit', function(e) {
-           e.preventDefault();
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Дата"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="ФИО"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Наличная оплата"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Безналичная оплата"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="QR"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Выручка"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Касса"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Инкассация"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Расходы"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="ЗП"></span>
+        </div>
+
+        <input type="submit" class="logbtn" value="Login">
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
 
 
-           let message = `Отчет elciga\n`;
-           message += `${ this.date.value } ${ this.fio.value }\n`;
-           message += `Название точки: ${ this.name.value }\n`;
-           message += `Наличка: ${ this.name.value }\n`;
-           message += `Безнал: ${ this.cash.value }\n`;
-           message += `QR: ${ this.qr.value }\n`;
-           message += `Выручка: ${ this.ammount.value }\n`;
-           message += `Инкассация: ${ this.incas.value }\n`;
-           message += `Расходы: ${ this.expenses.value }\n`;
-           message += `ЗП: ${ this.zp.value }\n`;
-           console.log(message);
-
-           axios.post(URI_API, {
-               chat_id: CHAT_ID,
-               parse_mode: 'html',
-               text: message
-           })
-    })
-  </script>
-
-</body>
+  </body>
 </html>
