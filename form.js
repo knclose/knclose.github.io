@@ -5,11 +5,11 @@ tg.expand();
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-tg.MainButton.text = "Отправить отчет"
+tg.MainButton.text = "Отправить отчет!"
 tg.MainButton.isVisible = true
 tg.MainButton.isActive = true
 tg.MainButton.show()
-tg.MainButton.nable()
+tg.MainButton.enable()
 
 const form = document.getElementById('form');
 
