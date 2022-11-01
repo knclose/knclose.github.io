@@ -1,6 +1,15 @@
-// let tg = window.Telegram.WebApp;
+let tg = window.Telegram.WebApp;
 
-// tg.expand();
+tg.expand();
+
+tg.MainButton.textColor = "#FFFFFF";
+tg.MainButton.color = "#2cab37";
+
+tg.MainButton.text = "Send data"
+tg.MainButton.isVisible = true
+tg.MainButton.isActive = true
+tg.MainButton.show()
+tg.MainButton.nable()
 
 const form = document.getElementById('form');
 
