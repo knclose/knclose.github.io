@@ -1,7 +1,7 @@
 const form = document.getElementById('form');
 
 function retrieveFormValue(event) {
-    event.prevenDefault();
+    event.preventDefault();
 
     const name = form.querySelector('[name="name"]'),
         date = form.querySelector('[name="date"]'),
