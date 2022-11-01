@@ -29,7 +29,8 @@ function retrieveFormValue(event) {
         zp: zp.value
     };
 
-    console.log(values)
+    console.log(values);
+    window.location.href = 'https://sasha52205.github.io/tnanks.html';
 }
 
 form.addEventListener('submit', retrieveFormValue);
