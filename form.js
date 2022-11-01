@@ -1,3 +1,7 @@
+let tg = window.Telegram.WebApp;
+
+tg.expand();
+
 const form = document.getElementById('form');
 
 function retrieveFormValue(event) {
@@ -28,9 +32,10 @@ function retrieveFormValue(event) {
         rash: rash.value,
         zp: zp.value
     };
-
+    tg.sendData(values);
     console.log(values);
     window.location.href = 'https://sasha52205.github.io/tnanks.html';
+    
 }
 
 form.addEventListener('submit', retrieveFormValue);
