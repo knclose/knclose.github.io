@@ -48,11 +48,11 @@ function retrieveFormValue(event) {
 }
 
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	item = "test";
-	tg.sendData(item);
-});
-
 
 form.addEventListener('submit', retrieveFormValue);
 
+
+item = "6";
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	tg.sendData(item);
+});
