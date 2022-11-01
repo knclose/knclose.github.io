@@ -34,7 +34,7 @@ function retrieveFormValue(event) {
     };
 
     console.log(values)
-    window.location.href = 'http://site.com/';
+    window.location.href = 'tnanks.html';
     // tg.sendData(values)
 }
 
