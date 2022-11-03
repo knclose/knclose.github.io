@@ -21,6 +21,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	      date: date,
 	      zp: zp};
 	
-	alert(JSON.stringify(values));
-	console.log('test')
+    alert(JSON.stringify(values));
+    console.log('test')
 });
