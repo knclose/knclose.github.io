@@ -26,7 +26,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
     rash = document.getElementById("rash").value;
     zp = document.getElementById("zp").value;
 
-    values = {name: fio,
+    values = {fio: fio,
 	      date: date,
 	      point: point,
               cash: cash,
