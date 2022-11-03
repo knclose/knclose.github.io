@@ -38,9 +38,21 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
               incas: incas,
               rash: rash,
 	      zp: zp};
-	
-    alert(JSON.stringify(values));
-    tg.sendData(JSON.stringify(values));
+
+    if (name ==""){
+        alert('Вы не указали ФИО!');
+    }
+    if (date == ""){
+        alert('Вы не указали дату!');
+    }
+    if (point == "Выберите точку..."){
+        alert('Вы не выбрали точку!');
+    }
+    else{
+        alert(JSON.stringify(values));
+        tg.sendData(JSON.stringify(values));
+    }
+    
 });
 
 
