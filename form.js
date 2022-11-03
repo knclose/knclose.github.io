@@ -12,20 +12,19 @@ tg.MainButton.show()
 tg.MainButton.enable()
 
 const form = document.getElementById('form');
-item = "6";
-const name = form.querySelector('[name="name"]'),
-        date = form.querySelector('[name="date"]'),
-        cash = form.querySelector('[name="cash"]'),
-        term = form.querySelector('[name="term"]'),
-        qr = form.querySelector('[name="qr"]'),
-        amount = form.querySelector('[name="amount"]'),
-        stcash = form.querySelector('[name="stcash"]'),
-        fncash = form.querySelector('[name="fncash"]'),
-        incas = form.querySelector('[name="incas"]'),
-        rash = form.querySelector('[name="rash"]'),
-        zp = form.querySelector('[name="zp"]');
+    const name = document.getElementById('name').value,
+        date = document.getElementById('date').value,
+        cash = document.getElementById('cash').value,
+        term = document.getElementById('term').value,
+        qr = document.getElementById('qr').value,
+        amount = document.getElementById('amount').value,
+        stcash = document.getElementById('stcash').value,
+        fncash = document.getElementById('fncash').value,
+        incas = document.getElementById('incas').value,
+        rash = document.getElementById('rash').value,
+        zp = document.getElementById('zp').value;
 
-const values = {
+    const values = {
         name: name.value,
         date: date.value,
         cash: cash.value,
@@ -36,11 +35,10 @@ const values = {
         fncash: fncash.value,
         incas: incas.value,
         rash: rash.value,
-        zp: zp.value};
-
-const ite = name.value;
+        zp: zp.value
+    };
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	alert(JSON.stringify(values));
-	tg.sendData(values):
+	tg.sendData(JSON.stringify(values)):
 });
