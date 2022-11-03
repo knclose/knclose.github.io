@@ -5,7 +5,7 @@ tg.expand();
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-tg.MainButton.text = "Отправить отчет5!"
+tg.MainButton.text = "Отправить отчет6!"
 tg.MainButton.isVisible = true
 tg.MainButton.isActive = true
 tg.MainButton.show()
@@ -43,5 +43,5 @@ const ite = {
         atest: "testjdjdjdj"};
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	alert(JSON.stringify(ite));
+	alert(JSON.stringify(values));
 });
