@@ -39,5 +39,5 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 		zp: zp.value};
 	
 	alert(JSON.stringify(values));
-	tg.sendData(JSON.stringify(values));
+	console.log('test')
 });
