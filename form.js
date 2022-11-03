@@ -49,7 +49,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
         alert('Вы не выбрали точку!');
     }
     else{
-        alert(JSON.stringify(values));
         tg.sendData(JSON.stringify(values));
     }
     
