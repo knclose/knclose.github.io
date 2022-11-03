@@ -17,10 +17,9 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
     date = document.getElementById("date").value;
     zp = document.getElementById("zp").value;
 
-    	const values = {
-		name: name.value,
-		date: date.value,
-		zp: zp.value};
+    values = {name: name,
+	      date: date,
+	      zp: zp};
 	
 	alert(JSON.stringify(values));
 	console.log('test')
