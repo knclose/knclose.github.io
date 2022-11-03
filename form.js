@@ -15,6 +15,7 @@ tg.MainButton.enable()
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
     fio = document.getElementById("name").value;
     date = document.getElementById("date").value;
+    point = document.getElementById("point").value;
     cash = document.getElementById("cash").value;
     term = document.getElementById("term").value;
     qr = document.getElementById("qr").value;
@@ -27,14 +28,15 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 
     values = {name: fio,
 	      date: date,
-          cash: cash,
-          term: term,
-          qr: qr,
-          amount: amount,
-          stcash: stcash,
-          fncash: fncash,
-          incas: incas,
-          rash: rash,
+	      point: point,
+              cash: cash,
+              term: term,
+              qr: qr,
+              amount: amount,
+              stcash: stcash,
+              fncash: fncash,
+              incas: incas,
+              rash: rash,
 	      zp: zp};
 	
     alert(JSON.stringify(values));
