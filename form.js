@@ -39,7 +39,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
               rash: rash,
 	      zp: zp};
 
-    if (name ==""){
+    if (fio ==""){
         alert('Вы не указали ФИО!');
     }
     if (date == ""){
