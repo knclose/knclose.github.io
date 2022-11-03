@@ -5,26 +5,26 @@ tg.expand();
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-tg.MainButton.text = "Отправить отчет99!"
+tg.MainButton.text = "Отправить 99!"
 tg.MainButton.isVisible = true
 tg.MainButton.isActive = true
 tg.MainButton.show()
 tg.MainButton.enable()
 
 const form = document.getElementById('form');
-    const name = document.getElementById('name').value,
-        date = document.getElementById('date').value,
-        cash = document.getElementById('cash').value,
-        term = document.getElementById('term').value,
-        qr = document.getElementById('qr').value,
-        amount = document.getElementById('amount').value,
-        stcash = document.getElementById('stcash').value,
-        fncash = document.getElementById('fncash').value,
-        incas = document.getElementById('incas').value,
-        rash = document.getElementById('rash').value,
-        zp = document.getElementById('zp').value;
+const name = document.getElementById('name').value,
+       date = document.getElementById('date').value,
+       cash = document.getElementById('cash').value,
+       term = document.getElementById('term').value,
+       qr = document.getElementById('qr').value,
+       amount = document.getElementById('amount').value,
+       stcash = document.getElementById('stcash').value,
+       fncash = document.getElementById('fncash').value,
+       incas = document.getElementById('incas').value,
+       rash = document.getElementById('rash').value,
+       zp = document.getElementById('zp').value;
 
-    const values = {
+const values = {
         name: name.value,
         date: date.value,
         cash: cash.value,
