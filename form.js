@@ -42,5 +42,5 @@ const ite = name.value;
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	alert(JSON.stringify(values));
-	tg.SendData(values):
+	tg.sendData(values):
 });
