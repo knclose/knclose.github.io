@@ -79,5 +79,5 @@ const values = {
         zp: zp.value};
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(values);
+	alert(item);
 });
