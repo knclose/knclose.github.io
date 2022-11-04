@@ -6,21 +6,31 @@
   box-sizing: border-box;
 }
 
+
+.container {
+	max-width:  10px;
+  max-height: 10px;
+  
+}
+
 body{
-  max-width: 390px
+  max-height: 100%;
+  max-width: 100%;
   background-image: linear-gradient(120deg,#3498db,#8e44ad);
+  
 }
 
 .login-form{
   width: 360px;
   background: #f1f1f1;
-  height: 1000px;
+  height: 890px;
   padding: 80px 40px;
   border-radius: 10px;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+  
 }
 
 .login-form h1{
@@ -115,4 +125,17 @@ body{
   border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
+}
+
+
+.thanks{
+  width: 360px;
+  background: #f1f1f1;
+  height: 100px;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
