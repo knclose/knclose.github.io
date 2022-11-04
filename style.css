@@ -22,8 +22,8 @@ body{
   padding: 60px 60px;
   border-radius: 20px;
   position: fixed;
-  left: 50%;
-  top: 50%;
+  left: 40px;
+  top: 40px;
   transform: translate(-50%,-50%);
   
 }
