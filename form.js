@@ -3,7 +3,7 @@ let tg = window.Telegram.WebApp;
 tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "#2cab37";
+tg.MainButton.color = "#fa950e";
 
 tg.MainButton.text = "Отправить 00!"
 tg.MainButton.isVisible = true
