@@ -7,14 +7,18 @@
 }
 
 
-
-
-body{
-  max-width: 100%;
-  bbackground-image: linear-gradient(120deg,#f83d00,#fa950e);
+.container {
+	max-width:  10px;
+  max-height: 10px;
   
 }
 
+body{
+  max-height: 200%;
+  max-width: 100%;
+  background-image: linear-gradient(120deg,#f83d00,#fa950e);
+  
+}
 
 .login-form{
   width: 360px;
@@ -30,7 +34,7 @@ body{
 
 .login-form h1{
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .txtb{
