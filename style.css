@@ -7,14 +7,10 @@
 }
 
 
-.container {
-	max-width:  10px;
-  max-height: 10px;
-  
-}
+
 
 body{
-  max-height: 250%;
+  max-height: 50%;
   max-width: 100%;
   bbackground-image: linear-gradient(120deg,#f83d00,#fa950e);
   
